@@ -1,10 +1,3 @@
-cat << 'EOF' > grpo_demo_llama3_qwen2.py
-# Copyright 2025 Google LLC
-# Licensed under the Apache License, Version 2.0.
-
-r"""Demo script for GRPO with Llama3 model.
-"""
-
 import argparse
 import json
 import os
@@ -587,5 +580,3 @@ nnx.update(
 )
 print(f"{eval_corr=}, {eval_total=}, {eval_accuracy=}%,"
       f" {eval_partial_accuracy=}%, {eval_format_accuracy=}%")
-
-EOF
