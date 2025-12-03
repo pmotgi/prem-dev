@@ -574,12 +574,12 @@ def check_numbers(prompts, completions, answer, **kargs):  # pylint: disable=unu
   ]
 
   scores = []
-  print("START ============================")
-  print(f"Question: {question[0]}")
-  print(f"Answer: {answer[0]}")
-  print(f"Response: {responses[0]}")
-  print(f"Extracted: {extracted_responses[0]}")
-  print("END ==============================")
+#  print("START ============================")
+#  print(f"Question: {question[0]}")
+ # print(f"Answer: {answer[0]}")
+ # print(f"Response: {responses[0]}")
+ # print(f"Extracted: {extracted_responses[0]}")
+#  print("END ==============================")
   for guess, true_answer in zip(extracted_responses, answer):
     if guess is None:
       scores.append(0)
