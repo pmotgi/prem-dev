@@ -35,6 +35,12 @@ import fsspec
 import grain
 import jax
 import optax
+
+try:
+    jax.distributed.initialize()
+except Exception as e:
+    print(f"Distributed init failed or skipped (safe if local only): {e}")
+
 from orbax import checkpoint as ocp
 import qwix
 from tqdm.auto import tqdm
