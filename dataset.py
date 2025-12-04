@@ -3,7 +3,7 @@ import json
 from datasets import load_dataset
 
 # Define the base paths
-base_dir = "/tmp/grpo_test/rl/grpo/data"
+base_dir = "/dev/shm/tmp/grpo_test/rl/grpo/data"
 train_dir = os.path.join(base_dir, "train")
 test_dir = os.path.join(base_dir, "test")
 
