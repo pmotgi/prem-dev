@@ -180,8 +180,8 @@ logging.set_verbosity(
 # /***/gg-d/home/qwix-dev/rl/grpo/data/gsm8k_test.json
 
 GCS_BUCKET_PREFIX = "gcs://tunix/"
-TRAIN_DATA_PATH_SUBDIR = "rl/grpo/data/train"
-TEST_DATA_PATH_SUBDIR = "rl/grpo/data/test"
+TRAIN_DATA_PATH_SUBDIR = "/dev/shm/tmp/grpo_test/rl/grpo/data/train"
+TEST_DATA_PATH_SUBDIR = "/dev/shm/tmp/grpo_test/rl/grpo/data/test"
 HF_MODEL_VERSION = args.model_version
 
 
@@ -200,7 +200,7 @@ VLLM_MODEL_VERSION = os.path.join(
 )
 
 # ====== Base Model ======
-NNX_CKPT_DIR = os.path.join(args.root_dir, "rl/grpo/models/", HF_MODEL_VERSION)
+NNX_CKPT_DIR = os.path.join(args.root_dir, "/dev/shm/tmp/grpo_test/rl/grpo/models/", HF_MODEL_VERSION)
 
 # ====== Reproducibility ======
 SEED = 42
